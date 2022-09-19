@@ -10,30 +10,35 @@ body:
       value: |
         Thanks for taking the time to fill out this milestone report!
   - type: input
-    id: contact
+    id: description
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Milestone Description
+      description: Give this milestone a brief description.
+      placeholder: ex. Developers will be able to deploy custom smart contracts written in Rust.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: milestone-dependencies
     attributes:
-      label: What are the issues or pull requests needed for this milestone to be done?
-      description: Please link any issues or pull requests related to this milestone.
-      placeholder: "e.g., roadmap-test#1"
-      # value: "A bug happened!"
+      label: What issues or pull requests are needed for this milestone to be considered done?
+      description: Please link all issues or pull requests that this milestone depends on to be complete.
+      placeholder: "- [ ] https://github.com/PLN-Roadmap/roadmap-test/issues/1"
+      value:  "- [ ] https://github.com/PLN-Roadmap/roadmap-test/issues/1"
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: target-date
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Target Date
+      description: What's the expected target date for this milestone to be delivered?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Q3 2022
+        - Q4 2022
+        - Q1 2023
+        - Q2 2023
+        - Q3 2023
+        - Q4 2023
+        - Q1 2024
     validations:
       required: true
   - type: dropdown
@@ -52,11 +57,11 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: sh
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+  # - type: checkboxes
+  #   id: terms
+  #   attributes:
+  #     label: Code of Conduct
+  #     description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+  #     options:
+  #       - label: I agree to follow this project's Code of Conduct
+  #         required: true
