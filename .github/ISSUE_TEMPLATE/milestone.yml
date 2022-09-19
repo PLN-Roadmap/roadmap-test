@@ -1,5 +1,5 @@
-name: Add Milestone
-description: Add a milestone issue
+name: Milestone Report
+description: Add a milestone to the leadership roadmap report
 title: "[Milestone]: "
 labels: ["Milestone"]
 assignees:
