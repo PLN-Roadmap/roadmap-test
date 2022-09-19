@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this milestone report!
+        *Thanks for taking the time to fill out this milestone report!*
   - type: input
     id: description
     attributes:
@@ -17,6 +17,16 @@ body:
       placeholder: ex. Developers will be able to deploy custom smart contracts written in Rust.
     validations:
       required: true
+  - type: dropdown
+    id: strategic-theme-alignment
+    attributes:
+      label: What are the strategic themes this milestone is aligned with?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
   - type: textarea
     id: milestone-dependencies
     attributes:
@@ -29,34 +39,25 @@ body:
   - type: dropdown
     id: target-date
     attributes:
-      label: Target Date
-      description: What's the expected target date for this milestone to be delivered?
+      label: What's the expected target date for this milestone to be delivered?
+      description: Please select the quarter this milestone is expected to be complete.
       options:
-        - Q3 2022
-        - Q4 2022
-        - Q1 2023
-        - Q2 2023
-        - Q3 2023
-        - Q4 2023
-        - Q1 2024
+        - FY22 Q3
+        - FY22 Q4
+        - FY23 Q1
+        - FY23 Q2
+        - FY23 Q3
+        - FY23 Q4
+        - FY24 Q1
+        - Q2 2024 (alternative terminology)
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: sh
+  # - type: textarea
+  #   id: risks-and-mitigations
+  #   attributes:
+  #     label: What are the expected risks and mitigations?
+  #     description: Please describe any expected risks and how you plan to mitigate them.
+  #     render: sh
   # - type: checkboxes
   #   id: terms
   #   attributes:
