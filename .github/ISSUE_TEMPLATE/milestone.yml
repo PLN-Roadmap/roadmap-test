@@ -1,9 +1,7 @@
 name: Milestone Report
-description: Add a milestone to the leadership roadmap report
+description: Add a milestone to the roadmap report
 title: "[Milestone]: "
-labels: ["Milestone"]
-assignees:
-  - octocat
+labels: ["milestone"]
 body:
   - type: markdown
     attributes:
@@ -18,15 +16,15 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: strategic-theme-alignment
+    id: strategic-objective-alignment
     attributes:
-      label: What are the strategic themes this milestone is aligned with?
+      label: What are the strategic objectives this milestone aligns with?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Hyperscale the knowledgeable + aligned developers improving the PL Stack
+        - Deliver robust, accessible storage & retrieval of data across IPFS
+        - Launch Network breakthroughs that unlock user-defined programmability in Filecoin, scalability, & decentralized compute over data
+        - Keep critical team + network systems running smoothly
   - type: textarea
     id: milestone-dependencies
     attributes:
@@ -39,17 +37,14 @@ body:
   - type: dropdown
     id: target-date
     attributes:
-      label: What's the expected target date for this milestone to be delivered?
+      label: What's the target date for this milestone to be delivered?
       description: Please select the quarter this milestone is expected to be complete.
       options:
-        - FY22 Q3
-        - FY22 Q4
-        - FY23 Q1
-        - FY23 Q2
-        - FY23 Q3
-        - FY23 Q4
-        - FY24 Q1
-        - Q2 2024 (alternative terminology)
+        - Q4 2022
+        - Q1 2023
+        - Q2 2023
+        - Q3 2023
+        - Q4 2023
     validations:
       required: true
   # - type: textarea
