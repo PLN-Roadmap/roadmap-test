@@ -1,0 +1,36 @@
+name: Roadmap Report
+description: Create a roadmap report
+title: "[Roadmap]: "
+labels: ["roadmap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Thanks for taking the time to create this roadmap report!*
+  - type: input
+    id: description
+    attributes:
+      label: Roadmap Description
+      description: Give this roadmap a brief description.
+      placeholder: e.g.,
+    validations:
+      required: true
+  - type: dropdown
+    id: mission-alignment
+    attributes:
+      label: How does this roadmap align to our mission?
+      multiple: true
+      options:
+        - Hyperscale the knowledgeable + aligned developers improving the PL Stack
+        - Deliver robust, accessible storage & retrieval of data across IPFS
+        - Launch Network breakthroughs that unlock user-defined programmability in Filecoin, scalability, & decentralized compute over data
+        - Keep critical team + network systems running smoothly
+  - type: textarea
+    id: roadmap-dependencies
+    attributes:
+      label: What milestones should be included in this roadmap?
+      description: Please link all milestones.
+      placeholder: "- [ ] https://github.com/PLN-Roadmap/roadmap-test/issues/1"
+      value:  "- [ ] https://github.com/PLN-Roadmap/roadmap-test/issues/1"
+    validations:
+      required: true
